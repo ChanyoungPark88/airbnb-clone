@@ -4,13 +4,13 @@ import { useRouter } from "next/navigation";
 import Button from "./Button";
 import Heading from "./Heading";
 
-interface EmptyState {
+interface EmptyStateProps {
   title?: string;
   subtitle?: string;
   showReset?: boolean;
 }
 
-const EmptyState: React.FC<EmptyState> = ({
+const EmptyState: React.FC<EmptyStateProps> = ({
   title = "No exact matches",
   subtitle = "Try changing or removing some of your filters",
   showReset,
